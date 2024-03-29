@@ -1,0 +1,20 @@
+.main {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.list {
+    background-color: lightyellow;
+    border: 1px solid gray;
+    margin: 30px 30px 10px 10px;
+    height: 100px;
+    position: relative;
+}
+
+.list a {
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

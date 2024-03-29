@@ -1,0 +1,19 @@
+.main ul li {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.main ul li img {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.photo-text {
+    float: left;
+    width: 840px;
+    height: 180px;
+    text-align: left;
+    margin-left: 20px;
+    padding: 10px;
+}

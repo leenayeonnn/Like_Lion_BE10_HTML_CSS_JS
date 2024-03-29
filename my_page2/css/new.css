@@ -1,0 +1,23 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.item-list {
+    padding-top: 40px;
+}
+
+.item {
+    width: 500px;
+    height: 500px;
+    float: left;
+}
+
+.item-list {
+    text-align: ;
+}
+
+img {
+    width: 70%;
+    height: 70%;
+}

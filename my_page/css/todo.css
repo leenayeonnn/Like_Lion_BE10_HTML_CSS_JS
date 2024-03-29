@@ -1,0 +1,19 @@
+.todo-list {
+    display: inline-block;
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10%;
+}
+
+.todo-list h4 {
+    padding-bottom: 2px;
+}
+
+.todo-list li {
+    padding: 3px;
+    margin-top: 5px;
+    text-align: left;
+}
