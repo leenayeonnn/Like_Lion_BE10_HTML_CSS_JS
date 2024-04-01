@@ -1,0 +1,32 @@
+<!-- 자바스크립트 실습문제 1 
+
+### 문제 1: 최대값 판별하기
+사용자로부터 두 개의 숫자를 입력받아, 더 큰 숫자를 출력하는 프로그램을 작성하세요.
+
+```javascript
+let number1 = prompt("첫 번째 숫자를 입력하세요: ");
+let number2 = prompt("두 번째 숫자를 입력하세요: "); -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let number1 = prompt("첫 번째 숫자를 입력하세요: ");
+            let number2 = prompt("두 번째 숫자를 입력하세요: ");
+
+            number1 = parseInt(number1);
+            number2 = parseInt(number2);
+
+            if (number1 > number2) {
+                console.log(number1);
+            } else {
+                console.log(number2);
+            }
+        </script>
+    </body>
+</html>

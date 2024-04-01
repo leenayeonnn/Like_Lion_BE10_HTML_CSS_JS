@@ -1,0 +1,26 @@
+<!-- ### 문제 3: 계절 판별하기
+사용자로부터 월을 입력받아, 해당 월이 어떤 계절에 속하는지 출력하는 프로그램을 작성하세요. 예를 들어, 12, 1, 2월은 '겨울', 3, 4, 5월은 '봄', 6, 7, 8월은 '여름', 9, 10, 11월은 '가을'에 해당합니다. -->
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let month = parseInt(prompt("input month"));
+
+            if (month == 1 || month == 2 || month == 12) {
+                console.log("winter");
+            } else if (month == 3 || month == 4 || month == 5) {
+                console.log("spring");
+            } else if (month == 6 || month == 7 || month == 8) {
+                console.log("summer");
+            } else if (month == 9 || month == 10 || month == 11) {
+                console.log("autumn");
+            }
+        </script>
+    </body>
+</html>

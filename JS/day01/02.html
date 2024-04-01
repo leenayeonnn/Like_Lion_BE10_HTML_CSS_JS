@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /*
+                var - 변수 상수.. 뭐든 다 가능 / ES6 이후 지양
+                let - 변수 , const - 상수
+            */
+
+            console.log(v1); // var - 호이스팅 가능
+
+            var v1 = 0;
+            var v1 = 10; // var - 중복 선언 가능
+            console.log(v1);
+
+            // console.log(let1); let - 호이스팅 불가능
+
+            let let1 = 0;
+            // let let1 = 10; let - 중복 선언 불가능
+            console.log(let1);
+
+            // function으로 선언된 함수 ==> 호이스팅!!
+
+            function varScopeTest() {
+                if (true) {
+                    var varScope = 10;
+                }
+                console.log(varScope); // var - scope가 함수 단위
+            }
+
+            varScopeTest();
+
+            function letScopeTest() {
+                if (true) {
+                    let letScope = 10;
+                }
+                // console.log(letScope); let - scope가 블럭 단위
+            }
+
+            letScopeTest();
+
+            // 대입을 이용한 function ==> 호이스팅 XXXXX!!!
+
+            const sum = function () {
+                console.log("i'm sum func");
+            };
+
+            sum();
+        </script>
+    </body>
+</html>
