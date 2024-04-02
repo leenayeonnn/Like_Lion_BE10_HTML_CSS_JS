@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function add(a) {
+                console.log(a + a);
+            }
+
+            // JS의 함수는 arguments라는 자체적 배열을 가짐
+            // 따라서 매개변수가 맞지 않게 들어와도
+            // 관계없이 잘 돌아감
+            function add(a, b) {
+                console.log(a + b);
+                console.log(arguments[0]);
+            }
+
+            add(3);
+            add(3, 5);
+            add(3, 5, 7);
+        </script>
+    </body>
+</html>

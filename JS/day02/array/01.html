@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            const arr = [1, 2, 3, 4, "5"];
+            console.log(arr);
+
+            // 1개 - 배열 크기
+            const arr2 = new Array(10);
+            console.log(arr2);
+
+            // 2개 이상 - 값으로 취급
+            const arr3 = new Array(1, 2);
+            console.log(arr3);
+
+            arr[0] = { name: "kang" };
+            arr.push(10);
+            arr.push(() => console.log("hello"));
+
+            console.log(arr);
+
+            const [a, b, c, d, e, f, g] = arr;
+
+            console.log(a);
+            console.log(b);
+            console.log(c);
+            console.log(d);
+            console.log(e);
+            console.log(f);
+            console.log(g);
+        </script>
+    </body>
+</html>

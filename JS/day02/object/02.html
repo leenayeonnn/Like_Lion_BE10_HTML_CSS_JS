@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            const ironMan = {
+                name: "토니 스타크",
+                actor: "로버트 다우니 주니어",
+                alias: "아이언맨",
+            };
+            const captainAmerica = {
+                name: "스티븐 로저스",
+                actor: "크리스 에반스",
+                alias: "캡틴 아메리카",
+            };
+
+            print(ironMan);
+            print(captainAmerica);
+
+            function print(hero) {
+                const text = `${hero.alias}(${hero.name}) 역을 맡은 배우는 ${hero.actor} 입니다`;
+                console.log(text);
+            }
+
+            // 객체 비구조화 할당
+            function print(hero) {
+                const { alias, name, actor } = hero;
+                console.log(alias);
+                const text = `${alias}(${name}) 역을 맡은 배우는 ${name} 입니다.`;
+                console.log(text);
+            }
+
+            function print({ alias, name, actor }) {
+                const text = `${alias}(${name}) 역을 맡은 배우는 ${name} 입니다.`;
+                console.log(text);
+            }
+        </script>
+    </body>
+</html>

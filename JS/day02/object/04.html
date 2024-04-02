@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            const numbers = {
+                _a: 1,
+                _b: 2,
+
+                get a() {
+                    return this._a;
+                },
+                get b() {
+                    return this._b;
+                },
+
+                set a(value) {
+                    this._a = value;
+                },
+                set b(value) {
+                    this._b = value;
+                },
+            };
+
+            numbers.a = 3;
+            numbers.b = 4;
+            console.log(numbers.a);
+            console.log(numbers.b);
+        </script>
+    </body>
+</html>

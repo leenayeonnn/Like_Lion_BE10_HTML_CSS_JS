@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            hello();
+            // func1();
+
+            // 함수 호이스팅
+            function hello() {
+                console.log("hello");
+            }
+
+            // 중복 정의시 가장 마지막에 정의된 함수가 호출
+            function hello() {
+                console.log("hello--------");
+            }
+
+            // 상수 func1 에 함수 정의 => 일급 객체
+            // 대입을 통한 함수 정의는 호이스팅 XXXX
+            const func1 = function () {
+                console.log("func hello");
+            };
+
+            func1();
+
+            // 오버로딩 X
+            // 타입 지정을 안하기에 알아서 처리 함
+            function hi(a) {
+                console.log("hello" + a);
+            }
+
+            hi(10);
+            hi("aa");
+
+            // 화살표 함수
+            const func2 = () => console.log("func2 hello");
+            func2();
+
+            const func3 = (a) => {
+                console.log("func3" + a);
+            };
+            func3("333");
+
+            const func4 = (a, b) => {
+                return a + b;
+            };
+            console.log(func4(2, 3));
+
+            const func5 = (a, b) => a + b;
+            console.log(func5(2, 3));
+        </script>
+    </body>
+</html>

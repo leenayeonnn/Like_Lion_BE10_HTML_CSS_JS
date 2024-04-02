@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let a = 30;
+            let b = "test";
+
+            // js의 함수 = 일급 객체 = 하나의 타입
+            function test() {
+                console.log("test");
+            }
+
+            let t = test;
+
+            function c(abc) {
+                // 함수의 매개변수로 함수 사용 가능
+                abc();
+                return abc;
+            }
+
+            let ttt = c(test);
+            console.log(ttt);
+
+            c(test)();
+        </script>
+    </body>
+</html>
