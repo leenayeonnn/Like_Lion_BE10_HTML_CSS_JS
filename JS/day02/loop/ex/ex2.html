@@ -1,0 +1,29 @@
+<!-- 문제 2: 객체의 모든 프로퍼티와 값 출력하기
+주어진 객체의 모든 프로퍼티와 그 값을 콘솔에 출력하는 코드를 작성하세요.
+
+const person = {
+    name: '홍길동',
+    age: 25,
+    email: 'hong@example.com'
+};-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            const person = {
+                name: "홍길동",
+                age: 25,
+                email: "hong@example.com",
+            };
+
+            for (let key in person) {
+                console.log(`${key}: ${person[key]}`);
+            }
+        </script>
+    </body>
+</html>

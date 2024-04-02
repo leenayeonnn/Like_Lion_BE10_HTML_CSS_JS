@@ -1,0 +1,37 @@
+<!-- 문제 5: 객체 배열에서 특정 조건의 객체 찾기
+사용자 정보가 담긴 객체 배열에서 나이가 30 이상인 사람들만 찾아 새 배열을 만드는 코드를 작성하세요.
+
+const users = [
+    { name: 'Alice', age: 25 },
+    { name: 'Bob', age: 30 },
+    { name: 'Charlie', age: 28 },
+    { name: 'Dave', age: 35 }
+]; -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            const users = [
+                { name: "Alice", age: 25 },
+                { name: "Bob", age: 30 },
+                { name: "Charlie", age: 28 },
+                { name: "Dave", age: 35 },
+            ];
+
+            const newUsers = [];
+
+            for (let user of users) {
+                if (user.age >= 30) {
+                    newUsers.push(user);
+                }
+            }
+
+            console.log(newUsers);
+        </script>
+    </body>
+</html>

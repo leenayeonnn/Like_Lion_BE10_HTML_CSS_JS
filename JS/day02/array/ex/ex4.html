@@ -1,0 +1,28 @@
+<!-- 문제 4: 특정 조건의 요소 찾기
+주어진 객체 배열에서 나이가 30 이상인 첫 번째 사람을 찾으세요.
+
+const people = [
+    { name: 'Alice', age: 25 },
+    { name: 'Bob', age: 30 },
+    { name: 'Charlie', age: 28 }
+]; -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            const people = [
+                { name: "Alice", age: 25 },
+                { name: "Bob", age: 30 },
+                { name: "Charlie", age: 28 },
+            ];
+
+            const result = people.find((p) => p.age >= 30);
+            console.log(result);
+        </script>
+    </body>
+</html>
