@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            console.log(true && "hi");
+            console.log(false && "hi");
+
+            console.log(true || "hi");
+            console.log(false || "hi");
+
+            console.log("" || "hi");
+            console.log(0 || "hi");
+            console.log(null || "hi");
+            console.log(undefined || "hi");
+
+            console.log("a" || "hi");
+            console.log(1 || "hi");
+
+            console.log("==============================");
+
+            let a;
+            let b = null;
+            let c = undefined;
+            let d = 4;
+            let e = "test";
+
+            let f = a || b || c || d || e;
+
+            console.log(f);
+
+            console.log("==============================");
+
+            let name = "name";
+            let userName = name || "guest";
+            console.log(userName);
+
+            name = null;
+            userName = name || "guest";
+            console.log(userName);
+        </script>
+    </body>
+</html>

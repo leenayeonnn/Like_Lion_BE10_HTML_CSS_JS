@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let oldName = "old";
+            let newName = "new";
+
+            // if (newName) {
+            //     oldName = newName;
+            // }
+
+            newName && (oldName = newName);
+
+            console.log(oldName);
+
+            console.log("==============================");
+
+            const person = { age: 23 };
+            const person2 = { age: null };
+
+            person.age ||= 21;
+            person2.age ||= 21;
+
+            console.log(person.age);
+            console.log(person2.age);
+
+            const person3 = { age: 0 };
+            const person4 = { age: null };
+
+            person3.age ??= 21;
+            person4.age ??= 21;
+
+            console.log(person3.age);
+            console.log(person4.age);
+
+            console.log("==============================");
+
+            function makeObj(obj) {
+                obj.name ??= "guest";
+                obj.age ??= 20;
+                return obj;
+            }
+
+            console.log(makeObj({}));
+            console.log(makeObj({ name: "name" }));
+            console.log(makeObj(person));
+        </script>
+    </body>
+</html>

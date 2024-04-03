@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            const food = { name: "피자" };
+
+            function getFoodName(food) {
+                if (!food) return "아무거나";
+                return food.name;
+            }
+
+            console.log(getFoodName(food));
+
+            const food2 = null;
+            console.log(getFoodName(food2));
+
+            function getFoodName2(food) {
+                return food && food.name;
+            }
+
+            console.log(getFoodName2(food));
+            console.log(getFoodName2(food2));
+        </script>
+    </body>
+</html>
