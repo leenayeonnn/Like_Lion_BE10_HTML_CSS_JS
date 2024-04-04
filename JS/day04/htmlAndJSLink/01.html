@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <button id="btn">click Me!!</button>
+        <script>
+            //event
+            //소스(대상) - 이벤트리스너 (이벤트 이름 (ex- click), 이벤트 핸들러 (함수), [ToCapture])
+            // default = false = capturing
+            // true = bubbling
+
+            function hi() {
+                alert("hi");
+            }
+            // document.addEventListener("click", hi);
+
+            document.getElementById("btn").addEventListener("click", hi);
+        </script>
+    </body>
+</html>

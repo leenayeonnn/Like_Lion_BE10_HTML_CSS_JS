@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <ul>
+            <li>task 1</li>
+            <li>task 2</li>
+            <li>task 3</li>
+            <li>task 4</li>
+            <li>task 5</li>
+        </ul>
+
+        <!--name : 서버에서 사용
+            id : js에서 주로 사용-->
+        <label for="todo">input task</label>
+        <input type="text" id="todo-value" />
+        <button id="todoBtn">등록</button>
+
+        <script>
+            // 입력받아 추가하기
+            const btn = document.getElementById("todoBtn");
+            const ul = document.querySelector("ul");
+
+            btn.addEventListener("click", (event) => {
+                const li = document.createElement("li");
+
+                const newTodo = document.getElementById("todo-value").value;
+                const text = document.createTextNode(newTodo);
+
+                li.appendChild(text);
+                ul.appendChild(li);
+            });
+
+            // li 클릭하면 각 할일 text alert에 추가
+            ul.addEventListener("click", (event) => {
+                const todo = event.target.innerText;
+                alert(todo);
+            });
+        </script>
+    </body>
+</html>

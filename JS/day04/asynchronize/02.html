@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function sleep(ms) {
+                return new Promise((resolve) => setTimeout(resolve, ms));
+            }
+            async function makeError() {
+                await sleep(1000);
+                const error = new Error();
+                throw error;
+                console.log("hi");
+            }
+            async function process() {
+                try {
+                    await makeError();
+                } catch (e) {
+                    console.error(e);
+                }
+            }
+
+            console.log("start");
+            process();
+            console.log("end");
+        </script>
+    </body>
+</html>

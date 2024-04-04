@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="06.html" method="get">
+            이름 : <input type="text" name="name" id="name" /><br />
+            비밀번호 : <input type="password" name="password" id="password" /><br />
+            비밀번호 확인 : <input type="password" name="checkPassword" id="checkPasword" /><br />
+
+            <input type="submit" value="등록" />
+        </form>
+        <script>
+            // 이름을 잘 입력했는지
+            // 비밀번호가 일치하는지
+            const join = document.querySelector("form");
+
+            join.addEventListener("submit", (e) => {
+                const [id, pw, chpw] = document.querySelectorAll("input");
+
+                if (id.value == "") {
+                    alert("이름을 입력해주세요");
+                } else if (pw.value == "") {
+                    alert("패스워드를 입력해주세요");
+                } else if (chpw.value == "") {
+                    alert("비밀번호 확인을 해주세요.");
+                } else {
+                    if (pw.value != chpw.value) {
+                        alert("비밀번호가 같지 않습니다.");
+                    } else {
+                        alert("성공");
+                        return;
+                    }
+                }
+
+                // 현재 페이지에 머물게 해줌
+                e.preventDefault();
+            });
+        </script>
+    </body>
+</html>

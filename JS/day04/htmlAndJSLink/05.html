@@ -1,0 +1,28 @@
+<!-- 이벤트 버블링
+        이벤트가 전파됨
+        bubbling => 가장 앞에 보이는 것부터 뒤로
+        capturing => 가장 뒤에 있는 것부터 앞으로
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <style>
+            * {
+                border: 3px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div onclick="alert('outer-div');">
+            <div onclick="alert('inner-div');">
+                <div onclick="alert('inner-inner_div');">
+                    <h1 onclick="alert('h1');">
+                        <p onclick="alert('p');">p태그</p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function sleep(ms) {
+                return new Promise((resolve) => setTimeout(resolve, ms));
+            }
+
+            async function process() {
+                console.log("hi");
+                await sleep(1000); //비동기 처리
+                console.log("hello");
+            }
+
+            console.log("before process call");
+
+            process();
+
+            console.log("after process call");
+        </script>
+    </body>
+</html>
