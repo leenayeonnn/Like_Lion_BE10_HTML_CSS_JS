@@ -1,0 +1,54 @@
+body {
+    width: 300px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    border: 3px solid gray;
+}
+
+header {
+    background-color: aquamarine;
+    border-bottom: 3px solid gray;
+    padding: 10px;
+}
+
+contain > div {
+    padding: 10px;
+    border-bottom: 3px solid gray;
+}
+
+#input {
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+
+    width: 220px;
+}
+
+#add {
+    width: 48px;
+    background-color: aquamarine;
+    border: 2px solid gray;
+}
+
+#todo-list {
+    width: 300px;
+}
+
+li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+
+    text-align: left;
+}
+
+span {
+    margin: 10px;
+}
+
+.done span {
+    text-decoration: line-through;
+    color: gray;
+}
